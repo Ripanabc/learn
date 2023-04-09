@@ -1,36 +1,27 @@
-import java.io.*;
 
-public class HTMLForm {
-    public static void main(String[] args) {
-        try {
-            // Create a new file called "form.html"
-            File formFile = new File("form.html");
-            
-            // Open a PrintWriter to write HTML to the file
-            PrintWriter writer = new PrintWriter(formFile);
-            
-            // Write the HTML code for the form
-            writer.println("<html>");
-            writer.println("<head>");
-            writer.println("<title>My HTML Form</title>");
-            writer.println("</head>");
-            writer.println("<body>");
-            writer.println("<form action="https://ripanabc.github.io/academy">);
-            writer.println("First Name: <input type='text' name='firstName'><br>");
-            writer.println("Last Name: <input type='text' name='lastName'><br>");
-            writer.println("Email: <input type='email' name='email'><br>");
-            writer.println("<input type='submit' value='Submit'>");
-            writer.println("</form>");
-            writer.println("</body>");
-            writer.println("</html>");
-            
-            // Close the PrintWriter
-            writer.close();
-            
-            System.out.println("HTML form created successfully!");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Collect form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    // Display form data
+    echo "Name: $name <br>";
+    echo "Email: $email <br>";
+    echo "Message: $message";
 }
+?>
 
+<form method="post" action="https://ripanabc.github.io/10/tag html">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required><br>
+
+    <label for="message">Message:</label>
+    <textarea name="message" id="message" required></textarea><br>
+
+    <button type="submit">Submit</button>
+</form>
