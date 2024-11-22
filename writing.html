@@ -1,0 +1,176 @@
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Open+Sans:wght@300;400;500;700&display=swap');
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+//https://dribbble.com/shots/8103451-Document-creation
+
+$light-gray-border: rgb(240, 239, 239);
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  background: url(https://images.pexels.com/photos/1612353/pexels-photo-1612353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  font-family: 'Lora', serif;
+}
+
+.note {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  width: 470px;
+  background-color: white;
+
+  display: inline-block;
+  border-radius: 10px;
+  padding: 20px 30px;
+
+  &-header {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(143, 86, 1);
+    margin-bottom: 5px;
+  }
+
+  &-body {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(82, 82, 82);
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-bottom: 30px;
+  }
+
+  &-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.toolbar {
+  color: rgb(255, 255, 255);
+  display: flex;  
+  background-color: #2d3673;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgb(190, 190, 190);
+
+  &-box {
+    padding: 0 5px;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(255, 255,255 , 0.1);
+  }
+
+  &-button {
+    padding: 8px 6px;
+
+    .material-icons{
+      font-size: 20px;
+      vertical-align: middle;
+    }
+  }
+}
+</style>
+<body>
+<div class="note">
+	<div class="note-header">Audio room</div>
+	<div class="note-body" contenteditable="" spellcheck="false">
+		<b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+		industry's standard dummy text ever since the 1500s.
+
+		<h4>Subtopics</h4>
+		<p>
+			It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+			essentially.
+		</p>
+
+		<ul>
+			<li>It has survived not only five centurie</li>
+			<li>It was popularised in the 1960s</li>
+			<li>Desktop publishing software like Aldus</li>
+		</ul>
+	</div>
+	<div class="note-footer">
+		<div class="toolbar">
+			<div class="toolbar-box">
+				<div class="toolbar-button">
+					<span class="material-icons">format_bold</span>
+				</div>
+				<div class="toolbar-button">
+					<span class="material-icons">format_italic</span>
+				</div>
+				<div class="toolbar-button">
+					<span class="material-icons">format_underlined</span>
+				</div>
+				<div class="toolbar-button">
+					<span class="material-icons">strikethrough_s</span>
+				</div>
+			</div>
+
+			<div class="toolbar-box">
+				<div class="toolbar-button">
+					<span class="material-icons">format_color_text</span>
+				</div>
+				<div class="toolbar-button">
+					<span class="material-icons">format_color_fill</span>
+				</div>
+			</div>
+
+			<div class="toolbar-box">
+				<div class="toolbar-button">
+					<span class="material-icons">format_quote</span>
+				</div>
+				<div class="toolbar-button">
+					<span class="material-icons">code</span>
+				</div>
+				<div class="toolbar-button">
+					<span class="material-icons">format_size</span>
+				</div>
+			</div>
+
+			<div class="toolbar-box">
+				<div class="toolbar-button">
+					<span class="material-icons">format_list_bulleted</span>
+				</div>
+				<div class="toolbar-button">
+					<span class="material-icons">format_list_numbered</span>
+				</div>
+				<div class="toolbar-button">
+					<span class="material-icons">checklist_rtl</span>
+				</div>
+			</div>
+
+			<div class="toolbar-box">
+				<div class="toolbar-button">
+					<span class="material-icons">format_clear</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+// https://dribbble.com/shots/8103451-Document-creation
+// https://dribbble.com/shots/6468926-Notes-Widget
+// https://dribbble.com/shots/14839575-Note-Circle-Report/attachments/6548669?mode=media
+
+// https://dribbble.com/shots/15518750-Notes-Widget-Daily-UI-065/attachments/7297224?mode=media
+//https://dribbble.com/shots/10878981-Notion-Replacement-Icon
+//https://dribbble.com/shots/15602193-Notes-App-Mobile-Concept/attachments/7389884?mode=media
+  </script>
+</body>
+</html>
